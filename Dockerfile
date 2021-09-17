@@ -1,8 +1,8 @@
 FROM ubuntu:20.04
-LABEL maintainer="JuliBCN <julibcn@gmail.com>"
+LABEL maintainer="Luis Alberto <lcolinzuniga7@gmail.com>"
 
 # Install Dependencies
-ENV TZ=Europe/Dublin
+ENV TZ=America/Mexico_City
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt-get update && apt-get -y install apache2
 
